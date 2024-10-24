@@ -1,45 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rilwan Aminu's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" 
+rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        section {
-            padding: 20px;
+            background: linear-gradient(135deg, #f06, #ffba00);
+            color: #333;
+            line-height: 1.6;
         }
         h1, h2 {
-            color: #333;
+            text-align: center;
+            color: #fff;
+        }
+        h1 {
+            margin-top: 20px;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        h2 {
+            margin-top: 40px;
+            font-size: 2.5em;
+            text-transform: uppercase;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 15px;
+            border-left: 5px solid #ffba00;
+            transition: transform 0.3s;
+        }
+        section:hover {
+            transform: scale(1.02);
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;  
+            font-size: 1em;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+        }
+        footer a {
+            color: #ffba00;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
+        <h1>Rilwan Aminu's Portfolio</h1>
     </header>
-    <section>
-        <h2>About Me</h2>
-        <p>Insert a brief description about yourself.</p>
-        
-        <h2>Projects</h2>
-        <ul>
-            <li>Project 1: Description</li>
-            <li>Project 2: Description</li>
-            <li>Project 3: Description</li>
-        </ul>
-        
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:your_email@example.com">your_email@example.com</a></p>
-    </section>
+    
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my Portfolio Page! My name is Rilwan Aminu, and I have over 6 years of 
+experience as a Software Test Engineer, with 4 years focused on test automation frameworks. I am 
+proficient in Java, Python, and JavaScript, and have worked with .NET and C# on occasion.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Java, Python, JavaScript</li>
+                <li>CI/CD Pipelines</li>
+                <li>Test Automation Frameworks</li>
+                <li>Postman, Octopus, Azure Pipelines</li>
+                <li>Performance Testing with JMeter and BlazeMeter</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>Banking Project - Payment specialist for various payment systems (CHAPS, 
+SEPA, SWIFT).</li>
+                <li>Telecommunication Project - Automated chatbot and support management 
+software.</li>
+                <li>Investigation SaaS Project - Scaled up a SaaS investigation software.</li>
+            </ul>
+        </section>
+    </div>
+    
+    <footer>
+        <p>Contact me: <a href="mailto:rilwana61@gmail.com">rilwana61@gmail.com</a> | Call: 
+07393451981</p>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/rilwanaminu" 
+target="_blank">LinkedIn</a>.</p>
+    </footer>
+<a href="contact.html">Contact Me</a>
 </body>
 </html>
+        
